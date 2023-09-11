@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
@@ -33,11 +33,11 @@
   font-style: normal;
   font-weight: 200;
   src: local('Inter'), url('./assets/fonts/Inter/static/Inter-ExtraLight.ttf') format('truetype');
-}
+} */
 
-body {
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'EB Garamond';
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -46,4 +46,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */

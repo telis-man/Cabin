@@ -7,19 +7,19 @@ export const Header = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/">About us</Link>
+        <Link to="/about">About us</Link>
       </li>
       <li>
-        <Link to="/">Work</Link>
+        <Link to="/work">Work</Link>
       </li>
       <li>
-        <Link to="/">Services</Link>
+        <Link to="/services">Services</Link>
       </li>
       <li>
         <Link to="/contacts">Contacts</Link>
       </li>
       <li>
-        <Link to="/contacts">Blog</Link>
+        <Link to="/blog">Blog</Link>
       </li>
     </ul>
   );

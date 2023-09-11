@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
+import StyledHeader from "../core/TextDisplay/styles/Header.syle";
 
 export const Home = () => {
   return (
-    <div>
-      <div>This is a home page</div>
-      <Link to="/contacts">Contacts</Link>
-    </div>
+    <StyledHeader size="headline" fontWeight="900" textColor="background">
+      Hello world
+    </StyledHeader>
   );
 };
 

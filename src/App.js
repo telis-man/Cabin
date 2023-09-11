@@ -1,19 +1,34 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./styles/theme";
+import GlobalStyles from "./styles/Global";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import About from "./screens/About";
+import Work from "./screens/Work";
+import Services from "./screens/Services";
+import Blog from "./screens/Blog";
 import Contacts from "./screens/Contacts";
 import Home from "./screens/Home";
 import Header from "./features/Header";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contacts" element={<Contacts />} />
-      </Routes>
-      {/* <Footer /> */}
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/work" element={<Work />} />
+        </Routes>
+        {/* <Footer /> */}
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
