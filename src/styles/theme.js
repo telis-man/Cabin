@@ -7,6 +7,10 @@ const theme = {
     extraLarge: "4rem",
     headline: "10rem",
   },
+  fonts: {
+    primary: "'Inter', sans-serif",
+    secondary: "'EB Garamond', serif",
+  },
   breakpoints: {
     xs: "576px",
     s: "768px",

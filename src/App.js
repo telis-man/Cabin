@@ -18,6 +18,8 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Header />
+        Sveiki visi
+        <div>Labukas</div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contacts />} />

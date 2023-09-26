@@ -4,7 +4,12 @@ import StyledHeader from "../core/TextDisplay/styles/Header.syle";
 
 export const Home = () => {
   return (
-    <StyledHeader size="headline" fontWeight="900" textColor="background">
+    <StyledHeader
+      font="secondary"
+      size="headline"
+      fontWeight="900"
+      textColor="background"
+    >
       Hello world
     </StyledHeader>
   );
