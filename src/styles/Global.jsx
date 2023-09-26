@@ -8,8 +8,9 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'EB Garamond', serif;
-        // font-family: 'Inter', sans-serif;
+        font-family: 'Inter', sans-serif;
+        background-color: ${(props) => props.theme.colors.background};
+        color: ${(props) => props.theme.colors.text};
       }
 
 `;

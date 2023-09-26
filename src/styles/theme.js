@@ -21,6 +21,7 @@ const theme = {
     text: "#ffffff",
     primary: "#fccb06",
     secondary: "#b1ddf1",
+    accent: "#a3a3a3",
   },
 };
 

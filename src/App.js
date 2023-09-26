@@ -10,16 +10,14 @@ import Services from "./screens/Services";
 import Blog from "./screens/Blog";
 import Contacts from "./screens/Contacts";
 import Home from "./screens/Home";
-import Header from "./features/Header";
+import Nav from "./features/Nav";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <BrowserRouter>
-        <Header />
-        Sveiki visi
-        <div>Labukas</div>
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contacts />} />
