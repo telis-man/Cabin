@@ -6,6 +6,7 @@ const theme = {
     large: "3rem",
     extraLarge: "4rem",
     headline: "10rem",
+    display: "23rem",
   },
   fonts: {
     primary: "'Inter', sans-serif",

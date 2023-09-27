@@ -7,15 +7,16 @@ export const StyledUl = styled.ul`
   list-style-type: none;
   display: flex;
   gap: 20px;
-  border: 1px solid red;
+  //   border: 1px solid red;
   justify-content: flex-end;
+  margin-right: 50px;
 `;
 
 export const StyledLi = styled.li`
   padding: 0;
   list-style: none;
   color: ${(props) => props.theme.colors.text};
-  border: 1px solid blue;
+  //   border: 1px solid blue;
   padding: 10px;
 `;
 
@@ -24,6 +25,6 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  border: 1px solid green;
+  //   border: 1px solid green;
   font-size: ${(props) => props.theme.fontSizes.small};
 `;

@@ -1,6 +1,9 @@
 // import { Link } from "react-router-dom";
 
-import StyledHeader from "../core/TextDisplay/styles/Header.syle";
+import {
+  StyledHeader,
+  MainTextHeader,
+} from "../core/TextDisplay/styles/Header.syle";
 
 export const Home = () => {
   return (
@@ -13,14 +16,14 @@ export const Home = () => {
       >
         The new breed of creative production studio
       </StyledHeader>
-      <StyledHeader
+      <MainTextHeader
         font="primary"
-        size="headline"
+        size="display"
         fontWeight="900"
         textColor="text"
       >
         Vortex
-      </StyledHeader>
+      </MainTextHeader>
     </>
   );
 };
