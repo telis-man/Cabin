@@ -7,9 +7,9 @@ export const StyledUl = styled.ul`
   list-style-type: none;
   display: flex;
   gap: 20px;
-  //   border: 1px solid red;
   justify-content: flex-end;
-  margin-right: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
 `;
 
 export const StyledLi = styled.li`
