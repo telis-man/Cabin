@@ -1,6 +1,7 @@
 const theme = {
   fontSizes: {
     tiny: "0.5rem",
+    extraSmall: "0.8rem",
     small: "1rem",
     medium: "2rem",
     large: "3rem",
@@ -19,7 +20,7 @@ const theme = {
   },
   colors: {
     background: "#181818",
-    text: "#ffffff",
+    text: "#e2ded8",
     primary: "#fccb06",
     secondary: "#b1ddf1",
     accent: "#a3a3a3",

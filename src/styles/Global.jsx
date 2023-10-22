@@ -18,6 +18,10 @@ const GlobalStyles = createGlobalStyle`
         // border: 2px solid yellow;
       }
 
+      #root{
+        height: 100%;
+      }
+
 `;
 
 export default GlobalStyles;

@@ -11,22 +11,25 @@ import Blog from "./screens/Blog";
 import Contacts from "./screens/Contacts";
 import Home from "./screens/Home";
 import Nav from "./features/Nav";
+import { StyledWrapper } from "./App.styled";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/work" element={<Work />} />
-        </Routes>
-        {/* <Footer /> */}
+        <StyledWrapper>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/work" element={<Work />} />
+          </Routes>
+          {/* <Footer /> */}
+        </StyledWrapper>
       </BrowserRouter>
     </ThemeProvider>
   );

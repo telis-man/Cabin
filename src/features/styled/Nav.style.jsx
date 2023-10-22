@@ -6,7 +6,7 @@ export const StyledUl = styled.ul`
   margin: 0;
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: flex-end;
   padding-right: 50px;
   padding-top: 10px;
@@ -25,6 +25,8 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  //   border: 1px solid green;
-  font-size: ${(props) => props.theme.fontSizes.small};
+  font-size: ${(props) => props.theme.fontSizes.extraSmall};
+  &:hover {
+    color: ${(props) => props.theme.colors.text};
+  }
 `;

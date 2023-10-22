@@ -1,38 +1,29 @@
 // import { Link } from "react-router-dom";
-
 import {
-  StyledHeader,
-  MainTextHeader,
-  ContainerTopRightThird,
   HeaderContainer,
-  MainTextHeaderContainer,
-} from "../core/TextDisplay/styles/Header.syle";
+  PrimaryHeaderText,
+  SecondaryHeaderText,
+} from "./styled/header.styled";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
+  const [setprimaryHeaderTextLetterSpacing, primaryHeaderTextLetterSpacing] =
+    useState(null);
+
+  const calculateprimaryHeaderTextLetterSpacing = () => {};
+
+  useEffect(() => {
+    calculateprimaryHeaderTextLetterSpacing();
+  });
   return (
     <>
       <HeaderContainer>
-        <ContainerTopRightThird>
-          <StyledHeader
-            font="primary"
-            size="medium"
-            fontWeight="900"
-            textColor="text"
-          >
-            The new breed of creative production studio
-          </StyledHeader>
-        </ContainerTopRightThird>
+        <SecondaryHeaderText>
+          The new breed of creative production studio
+        </SecondaryHeaderText>
 
-        <MainTextHeaderContainer>
-          <MainTextHeader
-            font="primary"
-            size="display"
-            fontWeight="900"
-            textColor="text"
-          >
-            Vortex
-          </MainTextHeader>
-        </MainTextHeaderContainer>
+        <PrimaryHeaderText>Shizo</PrimaryHeaderText>
+        {/* <p style={{ color: "white", gridRow: 2, alignSelf: "end" }}>Hello</p> */}
       </HeaderContainer>
     </>
   );
