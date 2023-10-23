@@ -2,28 +2,57 @@
 import {
   HeaderContainer,
   PrimaryHeaderText,
+  PrimaryHeaderTextContainer,
   SecondaryHeaderText,
 } from "./styled/header.styled";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export const Home = () => {
-  const [setprimaryHeaderTextLetterSpacing, primaryHeaderTextLetterSpacing] =
+  const [primaryHeaderTextLetterSpacing, setprimaryHeaderTextLetterSpacing] =
     useState(null);
 
-  const calculateprimaryHeaderTextLetterSpacing = () => {};
+  const headerContainerRef = useRef();
+  const primaryHeaderTextRef = useRef();
+
+  const calculateprimaryHeaderTextLetterSpacing = () => {
+    const lengthH1 = primaryHeaderTextRef.current.textContent.length;
+    const containerWidth = headerContainerRef.current.offsetWidth;
+    const textContentWidth = primaryHeaderTextRef.current.offsetWidth;
+
+    console.log(containerWidth);
+    console.log(textContentWidth);
+
+    const totalSpacing =
+      containerWidth - primaryHeaderTextRef.current.scrollWidth;
+    const letterSpacingValue = (containerWidth - textContentWidth) / lengthH1;
+
+    return letterSpacingValue;
+  };
 
   useEffect(() => {
-    calculateprimaryHeaderTextLetterSpacing();
-  });
+    const value = calculateprimaryHeaderTextLetterSpacing;
+    setprimaryHeaderTextLetterSpacing(value);
+  }, []);
+
+  useEffect(() => {
+    console.log(primaryHeaderTextLetterSpacing);
+  }, [primaryHeaderTextLetterSpacing]);
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer ref={headerContainerRef}>
         <SecondaryHeaderText>
           The new breed of creative production studio
         </SecondaryHeaderText>
 
-        <PrimaryHeaderText>Shizo</PrimaryHeaderText>
-        {/* <p style={{ color: "white", gridRow: 2, alignSelf: "end" }}>Hello</p> */}
+        <PrimaryHeaderTextContainer>
+          <PrimaryHeaderText
+            ref={primaryHeaderTextRef}
+            letterSpacingValue={primaryHeaderTextLetterSpacing}
+          >
+            kawasaki
+          </PrimaryHeaderText>
+          {/* <p style={{ color: "white", gridRow: 2, alignSelf: "end" }}>Hello</p> */}
+        </PrimaryHeaderTextContainer>
       </HeaderContainer>
     </>
   );
