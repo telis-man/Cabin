@@ -19,7 +19,7 @@ export const Nav = () => {
         <StyledLink to="/contacts">Contacts</StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="/blog">Blog</StyledLink>
+        <StyledLink to="/gallery">Gallery</StyledLink>
       </StyledLi>
     </StyledUl>
   );

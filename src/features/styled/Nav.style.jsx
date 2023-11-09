@@ -21,12 +21,12 @@ export const StyledLi = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${(props) => props.theme.colors.accent};
+  color: ${(props) => props.theme.colors.text};
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: ${(props) => props.theme.fontSizes.extraSmall};
   &:hover {
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.accent};
   }
 `;

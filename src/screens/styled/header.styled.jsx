@@ -11,11 +11,10 @@ export const HeaderContainer = styled.div`
 `;
 
 export const PrimaryHeaderText = styled(TextHeading)`
-  font-size: 21vw;
+  font-size: 13vw;
   text-align: center;
   display: inline; /* Add this line */
-  letter-spacing: ${(props) => props.letterSpacingValue}px;
-  padding-left: ${(props) => props.letterSpacingValue / 2}px;
+  letter-spacing: 10px;
   text-align: center;
 `;
 
@@ -24,8 +23,7 @@ export const PrimaryHeaderTextContainer = styled.div`
   grid-row: 2;
   grid-column: span 2;
   align-self: end;
-  line-height: 8em;
-  transform: scaleY(1.5); /* This will vertically stretch the text */
+  // transform: scaleY(1.5);
 `;
 
 export const SecondaryHeaderText = styled(TextHeading)`

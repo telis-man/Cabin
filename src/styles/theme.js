@@ -19,8 +19,8 @@ const theme = {
     m: "992px",
   },
   colors: {
-    background: "#181818",
-    text: "#e2ded8",
+    background: "#e2ded8",
+    text: "#181818",
     primary: "#fccb06",
     secondary: "#b1ddf1",
     accent: "#a3a3a3",
